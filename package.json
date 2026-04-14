@@ -1,24 +1,22 @@
 {
-  "name": "gemclaw-jobs",
-  "version": "0.1.0",
+  "name": "gemclaw-jobseek",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.2.3",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "format": "biome format --write .",
+    "clean": "turbo run clean && rm -rf node_modules"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.3",
-    "typescript": "^5"
+    "@biomejs/biome": "^1.9.0",
+    "turbo": "^2.3.0",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "name": "@repo/cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "jobseek": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean",
+    "test": "vitest run",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@repo/core": "workspace:*",
+    "@repo/greenhouse": "workspace:*",
+    "@repo/ai": "workspace:*",
+    "@repo/resume": "workspace:*",
+    "@repo/linkedin-parser": "workspace:*",
+    "commander": "^13.0.0",
+    "@clack/prompts": "^0.8.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.0",
+    "vitest": "^2.1.0",
+    "typescript": "^5.7.0"
+  }
+}

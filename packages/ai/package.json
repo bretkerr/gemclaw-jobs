@@ -1,0 +1,27 @@
+{
+  "name": "@repo/ai",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@repo/core": "workspace:*",
+    "ai": "^4.1.0",
+    "@ai-sdk/anthropic": "^1.1.0",
+    "@ai-sdk/google": "^1.1.0",
+    "ollama-ai-provider": "^1.2.0",
+    "bottleneck": "^2.19.5"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "vitest": "^2.1.0",
+    "typescript": "^5.7.0"
+  }
+}

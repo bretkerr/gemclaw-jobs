@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-signal-amber: #F5A623;
+  --color-circuit-blue: #1A3A5C;
+  --color-bg: #0a0a0f;
+  --color-surface: #111118;
+  --color-border: #1e1e2e;
+  --color-text: #e5e4e2;
+  --color-muted: #888;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: ui-monospace, "SF Mono", Monaco, "Cascadia Mono", monospace;
+}
