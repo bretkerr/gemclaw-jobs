@@ -9,6 +9,7 @@ import {
   WORK_WEEKS_PER_YEAR,
 } from "./backlog-data";
 import { rank } from "./backlog-rank";
+import { RAPID7_POC } from "./data";
 import s from "./poc.module.css";
 
 const usd = new Intl.NumberFormat("en-US", {
@@ -152,6 +153,14 @@ export function BacklogRanker() {
         can prove it wrong. Value is assumed hours saved per week × {WORK_WEEKS_PER_YEAR} weeks ×
         the loaded rate. FTE assumes {HOURS_PER_FTE_YEAR.toLocaleString("en-US")} working hours a
         year.
+      </p>
+      <p className={s.after}>
+        I&rsquo;ve built this kind of model before, buyer-facing: the{" "}
+        <a href={RAPID7_POC} target="_blank" rel="noopener noreferrer">
+          ROI calculator in my Rapid7 work sample
+        </a>{" "}
+        turns a prospect&rsquo;s own inputs into a business case. Same rule there as here: every
+        input is visible and adjustable.
       </p>
     </div>
   );

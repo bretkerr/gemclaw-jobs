@@ -187,7 +187,14 @@ export const PLAN: Phase[] = [
   },
 ];
 
+export const RAPID7_POC = "https://www.contextjamming.com/portfolio/rapid7-solutions-marketing";
+
 export const PROOF_LINKS = [
+  {
+    title: "Rapid7 POC: the ROI calculator",
+    note: "An earlier work sample. Its centerpiece is an interactive ROI calculator that turns a buyer's own inputs into a business case, the same instinct as the backlog ranker here.",
+    href: RAPID7_POC,
+  },
   {
     title: "contextjamming.com",
     note: "My publication and build log. Next.js on Cloudflare Workers, with agent skills, MCP connectors, and verification gates.",
